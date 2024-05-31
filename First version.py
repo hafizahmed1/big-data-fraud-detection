@@ -1,6 +1,6 @@
-print("Hello World")
+print("Big Data Technologies Project 6")
 
-
+import pandas as pd
 import os
 from kaggle.api.kaggle_api_extended import KaggleApi
 import zipfile
@@ -29,7 +29,6 @@ with zipfile.ZipFile(f'{dataset_path}/ieee-fraud-detection.zip', 'r') as zip_ref
     zip_ref.extractall(dataset_path)
 
 # Load the dataset using pandas
-import pandas as pd
 
 train_transaction = pd.read_csv(f'{dataset_path}/train_transaction.csv')
 train_identity = pd.read_csv(f'{dataset_path}/train_identity.csv')
